@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IO-Track</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="node_modules/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+  integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+
+  <link rel="stylesheet" href="style/style.css">
+  <!-- <link rel="stylesheet" href="style/responsive.css"> -->
+
+
+</head>
+<body class="sidebar-fixed" >
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/IO-Track.svg" alt="Logo"></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/IO.svg" alt="Logo"></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <ul class="navbar-nav mt-2">
+          <li class="text-white"><h3>Profile</h3></li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right text-white">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <span class="menu-title">
+                Dashboard
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="menu-title active">
+                Profile
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carlist.html">
+              <span class="menu-title">
+                Car List
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="statistic.html">
+              <span class="menu-title">
+                Statistic
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="track.html">
+              <span class="menu-title">
+                Track
+                </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="menu-title">
+                <button class="btn btn-light btn-rounded">Log Out</button>
+                </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_settings-panel.html -->
+
+        <!-- partial -->
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <div class="nav-link">
+                <div class="profile-image">
+                  <img src="http://via.placeholder.com/100x100/f4f4f4/000000" alt="image"/>
+                  <span class="online-status online"></span> <!--change class online to offline or busy as needed-->
+                </div>
+                <div class="profile-name">
+                  <p class="name">
+                    Marina Michel
+                  </p>
+                  <p class="designation">
+                    Super Admin
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">
+                <i class="icon-rocket menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+                <span class="badge badge-success">New</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="icon-bell menu-icon"></i>
+                <span class="menu-title text-info">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carlist.html">
+                <i class="icon-bell menu-icon"></i>
+                <span class="menu-title">Car List</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistic.html">
+                <i class="icon-bell menu-icon"></i>
+                <span class="menu-title">Statistic</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="track.html">
+                <i class="icon-bell menu-icon"></i>
+                <span class="menu-title">Track</span>
+              </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="icon-bell menu-icon"></i>
+                <span class="menu-title">Log Out</span>
+              </a>
+            </li>
+            <li class="mt-4 nav-item nav-progress">
+              <h6 class="nav-progress-heading mt-4 font-weight-normal">
+                Today's Rent
+                <span class="nav-progress-sub-heading text-info">
+                  5 Rented Car
+                </span>
+              </h6>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <!-- <h6 class="nav-progress-heading mt-4 font-weight-normal">
+                Customer target
+                <span class="nav-progress-sub-heading">
+                  500
+                </span>
+              </h6>
+              <div class="progress progress-sm">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div> -->
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper" id="profile-wrapper">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm sub-nav pb-5">
+                  <h3 class="col-heading">Edit Your Profile</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Profile Start -->
+          <div class="content">
+            <div class="container">
+            
+                <form class="row g-3 needs-validation" method="get" action="profile.html" novalidate>
+                    <div class="col-md-6">
+                      <label for="validationCustom01" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">Fullname</label>
+                      <input type="text" class="form-control" id="validationCustom04" required>
+                      <div class="invalid-feedback">
+                        Please Enter Your Full Name
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="validationCustom04" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                          Please Enter Your Birthday
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <label for="validationCustom04" class="form-label">Age</label>
+                        <input type="text" class="form-control" id="validationCustom06" required>
+                    </div>
+                        <br>
+                    <div class="col-md-4">
+                        
+                        <label for="validationCustom04" class="form-label">Street : </label>
+                        <input type="text" class="form-control" id="validationCustom07" required>
+                        <div class="invalid-feedback">
+                          Please Enter Your Street
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">District</label>
+                        <input type="text" class="form-control" id="validationCustom08" required>
+                        <div class="invalid-feedback">
+                          Please Enter Your District Name
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom05" class="form-label">City</label>
+                      <input type="text" class="form-control" id="validationCustom08" required>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid City Name.
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom05" class="form-label">Province</label>
+                        <select class="form-select" id="validationCustom10" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid Province Name.
+                        </div>
+                      </div>
+                    
+                    <div class="col-md-3">
+                      <label for="validationCustom06" class="form-label">Postal Code</label>
+                      <input type="text" class="form-control" id="validationCustom11" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid zip.
+                      </div>
+                    </div>
+    
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="avatar-upload">
+                            <label>Upload Your Picture</label>
+                            <div class="avatar-preview">
+                              <div id="imagePreview" style="background-image: url(img/avatar.jpg);">
+                              </div>
+                           </div>
+                            <div class="avatar-edit">
+                              
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" value="Upload" onchange="readURL(this);" required>
+                                <label for="imageUpload"></label>
+                  
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2">
+                        <label for="validationCustom05" class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Pria
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Wanita
+                            </label>
+                          </div>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please choose your gender.
+                        </div>
+                      </div>
+    
+                      <div class="col-md-6">
+                        
+                      </div>
+                    
+                    <div class="col-md-5">
+                      <button class="btn btn-warning btn-lg btn-rounded" type="submit">Save</button>
+                    </div>
+                  </form>
+                  <footer class="footer position-relative mt-5">
+                    <div class="container-fluid clearfix">
+                      <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021 <a href="#">SocketSpace</a>. All rights reserved.</span>
+                    </div>
+                  </footer>
+            </div>
+          </div>
+        <!-- Profile End -->
+
+        <!-- content-wrapper ends -->
+
+
+        <!-- partial:partials/_footer.html -->
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  
+  <!-- Import Script -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+<!-- Custom Script -->
+  
+  <script src="script/script.js"></script>
+  
+</body>
+
+</html>

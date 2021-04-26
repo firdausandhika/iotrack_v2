@@ -1,0 +1,174 @@
+@media screen and (max-width: 960px) {
+	.project {
+		font-size: 80px;
+	}
+
+	.navbar-container {
+		display: flex;
+		justify-content: space-between;
+		height: 80px;
+		z-index: 1;
+		width: 100%;
+		max-width: 1300px;
+		padding: 0;
+	}
+
+	.navbar-menu {
+		display: grid;
+		grid-template-columns: auto;
+		margin: 0;
+		width: 100%;
+		position: absolute;
+		top: -1000px;
+		opacity: 0;
+		transition: all 0.5s ease;
+		height: 70vh;
+		z-index: -1;
+		background: #131313;
+	}
+
+	.navbar-menu.active {
+		background: rgba(255, 255, 255, 0.6);
+		top: 100%;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 99;
+		height: 70vh;
+		font-size: 1.6rem;
+	}
+
+	#navbar-logo {
+		padding-left: 25px;
+	}
+
+	.navbar-toggle .bar {
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		transition: all 0.3s ease-in-out;
+		background: #131313;
+	}
+
+	.navbar-item {
+		width: 100%;
+	}
+
+	.navbar-links {
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+		display: table;
+	}
+
+	#mobile-menu {
+		position: absolute;
+		top: 20%;
+		right: 5%;
+		transform: translate(5%, 20%);
+	}
+
+	.navbar-toggle .bar {
+		display: block;
+		cursor: pointer;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	#mobile-menu.is-active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.carousel-caption h1{
+		font-size: 40px;
+	}
+
+	.avatar-preview{
+		margin: -30px auto 10px;
+	}
+
+	.avatar-upload label {
+		display: none;
+	}
+
+	/* .sub-nav #myInput, .col-title{
+		display: none;
+	} */
+	
+}
+
+
+@media(max-width: 767px) {
+	.background{
+		max-width: 100%;
+	}
+
+	.project {
+		font-size: 60px;
+	}
+
+	.sub-nav{
+		max-width: 50%;
+	}
+
+	.filter-menu{
+		font-size: 14px;
+	};
+
+}
+
+@media(max-width: 574px) {
+	
+	/* .filter-item, #myFilter{
+		display: none;
+	} */
+	.col-sm.sub-nav{
+		justify-content: center;
+		margin-bottom: 5px;
+	}
+
+	/* .filter-menu{
+		margin-top: 5px;
+	} */
+
+	#myFilter.form-control{
+		width: 100%;
+		height: 30px;
+	}
+
+	.project {
+		font-size: 20px;
+	}
+
+	.form-container {
+		right: 30px;
+	}
+
+	.screen {
+		width: 340px;
+		right:10px
+	}
+	.title {
+		right: 1px;	
+	}
+	.copyright-text {
+		visibility: hidden;		
+	}
+
+	@media(max-width: 320px) {
+		.filter-menu{
+			font-size: 12px;
+		};
+	}
+
+	@media(max-width: 280px){
+		.form-container{
+			width: 260px;
+		}
+	}
+}
